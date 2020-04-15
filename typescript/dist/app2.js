@@ -1,22 +1,31 @@
 "use strict";
-var Carro = /** @class */ (function () {
-    function Carro() {
+// class Carro 
+// {
+//     private modelo:string
+//     private numeroPortas:number
+//     private velocidade:number
+//     public acelerar() : void{
+//         this.velocidade = this.velocidade + 10
+//     }
+//     public parar() : void{
+//         this.velocidade = 0
+//     }
+//     public velocidadeAtual() : number{
+//         return this.velocidade
+//     }
+// }
+// let carroA = new Carro()
+// console.log(carroA)
+var Concessionaria = /** @class */ (function () {
+    function Concessionaria() {
     }
-    return Carro;
+    Concessionaria.prototype.fornecerEndereco = function () {
+        return this.endereco;
+    };
+    Concessionaria.prototype.mostraListadeCarros = function () {
+        this.listadecarros;
+    };
+    return Concessionaria;
 }());
--0;
-acelerar();
-void {
-    this: .velocidade = this.velocidade + 10
-};
-parar();
-void {
-    this: .velocidade = 0
-};
-velocidadeAtual();
-number;
-{
-    return this.velocidade;
-}
-var carroA = new Carro();
-console.log(carroA);
+var concessionaria = new Concessionaria();
+console.log(concessionaria);

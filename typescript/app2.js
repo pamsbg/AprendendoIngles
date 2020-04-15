@@ -1,21 +1,50 @@
 var Carro = /** @class */ (function () {
-    function Carro() {
+    function Carro(modelo, numeroDePortas) {
+        this.velocidade = 0;
+        this.modelo = modelo;
+        this.numeroDePortas = numeroDePortas;
     }
+    Carro.prototype.acelerar = function () {
+        this.velocidade = this.velocidade + 10;
+    };
+    Carro.prototype.parar = function () {
+        this.velocidade = 0;
+    };
+    Carro.prototype.velocidadeAtual = function () {
+        return this.velocidade;
+    };
     return Carro;
 }());
--0;
-acelerar();
-void {
-    "this": .velocidade = this.velocidade + 10
-};
-parar();
-void {
-    "this": .velocidade = 0
-};
-velocidadeAtual();
-number;
-{
-    return this.velocidade;
-}
-var carroA = new Carro();
-console.log(carroA);
+var Concessionaria = /** @class */ (function () {
+    function Concessionaria(endereco) {
+        this.endereco = endereco;
+    }
+    Concessionaria.prototype.fornecerEndereco = function () {
+        return this.endereco;
+    };
+    Concessionaria.prototype.mostrarListaDeCarros = function () {
+        return this.listaDeCarros;
+    };
+    return Concessionaria;
+}());
+var Pessoa = /** @class */ (function () {
+    function Pessoa(nome, carroPreferido) {
+        this.nome = nome;
+        this.carroPreferido = carroPreferido;
+    }
+    Pessoa.prototype.dizerNome = function () {
+        return this.nome;
+    };
+    Pessoa.prototype.dizerCarroPreferido = function () {
+        return this.carroPreferido;
+    };
+    Pessoa.prototype.comprarCarror = function (carro) {
+        this.carro = carro;
+    };
+    Pessoa.prototype.dizerCarroQueTem = function () {
+        return this.carro;
+    };
+    return Pessoa;
+}());
+var pessoa = new Pessoa('José', 'Veloster');
+console.log(pessoa.dizerCarroPreferido());
