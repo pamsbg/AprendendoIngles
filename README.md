@@ -1,2 +1,2 @@
-# angular
-Espaço dedicado a projetos de desenvolvimento web em angular e ts
+# Projeto Aprendendo Inglês
+Espaço dedicado a projeto de desenvolvimento web em angular e ts
